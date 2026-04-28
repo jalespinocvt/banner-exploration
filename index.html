@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerrome Espino - Lifetime Explorations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
   <!-- Banner Section -->
   <div id="banner">
-    <h2>Hi there! I'm Jerrome Espino.</h2>
+    <h2>Hi there! I'm <span class="highlight">Jerrome Espino</span>.</h2>
     <p>Here are the things I want to explore in my lifetime:</p>
     <ul id="exploreList">
       <li>Travel to historical landmarks</li>
@@ -10,13 +19,19 @@
     </ul>
   </div>
 
-  <!-- Input field for new items -->
-  <input type="text" id="newItem" placeholder="Add new exploration item">
-  
-  <!-- Buttons -->
-  <button onclick="addItem()">Add Item</button>
-  <button onclick="changeFont()">Change Font</button>
-  <button onclick="makeBold()">Make Bold</button>
+  <!-- Controls Section -->
+  <div class="controls">
+    <!-- Input field for new items -->
+    <input type="text" id="newItem" placeholder="Add new exploration item...">
+    
+    <!-- Buttons -->
+    <div class="button-group">
+      <button id="addBtn" onclick="addItem()">Add Item</button>
+      <button id="fontBtn" onclick="changeFont()">Change Font</button>
+      <button id="boldBtn" onclick="makeBold()">Make Bold</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
+</html>
